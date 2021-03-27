@@ -18,3 +18,14 @@ body {
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
 }
+
+.movie {
+  padding-top: 30px;
+  padding-left: 30px;
+  height: 400px;
+  width: 300px;
+}
+
+.movie img {
+  max-width: 100%;
+}
