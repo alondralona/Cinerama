@@ -1,0 +1,31 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+.bg-steel {
+  background-color: #b46409;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #1c1c1d;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.movie {
+  padding-top: 30px;
+  padding-left: 30px;
+  height: 400px;
+  width: 300px;
+}
+
+.movie img {
+  max-width: 100%;
+}
