@@ -1,2 +1,0 @@
-# Cinerama
-Movie Recommendation Website 
