@@ -3,6 +3,12 @@ body {
   color: #333333;
   margin-top: 5rem;
 }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .bg-steel {
   background-color: #b46409;
 }
@@ -20,12 +26,25 @@ body {
 }
 
 .movie {
-  padding-top: 30px;
-  padding-left: 30px;
-  height: 400px;
+  background-color: red;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
   width: 300px;
 }
 
 .movie img {
   max-width: 100%;
+}
+
+.movie-info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1px 1px;
+  letter-spacing: 1px;
+}
+
+.movie-info h3 {
+  margin: 0;
 }
