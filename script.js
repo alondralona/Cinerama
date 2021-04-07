@@ -10,6 +10,7 @@ const search = document.getElementById('search');
 const form = document.getElementById('searchForm');
 
 
+
 findMovies();
 
 async function findMovies(url){
@@ -30,32 +31,15 @@ function displaySearch(movies){
         const elementMovie = document.createElement('div');
 
         elementMovie.classList.add('movie');
-
-        elementMovie.innerHTML = 
-               `<img src = "${IMGPATH + poster_path}" 
-                alt =""
-                data-movie-id=${movie.id}/>
+        if(!movie.poster_path){
+            elementMovie.innerHTML = 
+            `<div class = "movie-info">
+                    <h3>Movie Poster Not Available</h3>
+                </div>
                 <div class = "movie-info">
                     <h3>${title}</h3>
                 </div>`
-            ;
-        main.appendChild(elementMovie);
-
-    });
-}
-
-
-function displaySearchRec(movies){
-    main.innerHTML = "";
-
-    movies.forEach((movie) => {
-
-        const {poster_path, title} = movie;
-
-        const elementMovie = document.createElement('div');
-
-        elementMovie.classList.add('movie');
-
+        }else
         elementMovie.innerHTML = 
                `<img src = "${IMGPATH + poster_path}" 
                 alt =""
@@ -91,17 +75,12 @@ document.onclick = function(event){
     const target = event.target
     if(target.tagName.toLowerCase() === 'img'){
     const movieId = target.dataset.movieId;
-    console.log('Event: ',event)
-    console.log(target.dataset.movieId);
-
     const path = `/movie/${movieId}recommendations`;
     const url = generateUrl(path);
-
     fetch(url)
         .then((res) => res.json())
         .then((data) =>{
-            console.log('Recommendations',data);
-            displaySearchRec(data.results);
+            displaySearch(data.results);
         })
         .catch((error) =>{
             console.log('Error:', error);
