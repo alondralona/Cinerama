@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
+
 import Search from './components/Search'
 import Results from './components/Results'
 import Popup from './components/Popup'
+import MovieMap from './components/MovieMap'
 const APIKEY= "a9abe32e301cc47ca49435473c6ae4a2";
 function App() {
   const [state, setState] = useState({
     s: "",
     results: [],
     selected: {}
+    
   });
   const apiurl = "https://api.themoviedb.org/3/search/movie?api_key="+ APIKEY + "&query=";
   const url = "https://api.themoviedb.org/3/movie/";
@@ -58,17 +61,20 @@ function App() {
     <div className="App">
       <header>
         <h1>Cinerama</h1>
-        <a class="nav-item nav-link" href="Login.html">Login</a>
       </header>
       <main>
+      
         <Search handleInput={handleInput} search={search} />
+       
+        <div> <MovieMap /></div>
 
         <Results results={state.results} openPopup={openPopup} />
-
+        
         {(typeof state.selected.title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
       </main>
     </div>
   );
 }
+
 
 export default App
