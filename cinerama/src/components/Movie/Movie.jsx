@@ -50,7 +50,7 @@ export default class Movie extends Component {
           <strong> Description: </strong>
           <p>{this.state.description}</p>
           <hr />
-          <div className="genere">
+          <div className="genre">
             <span className="genereTitle">
               <strong>Genres: </strong>
             </span>

@@ -10,7 +10,7 @@ export default function NavBar() {
     <Menu mode="horizontal">
       <Menu.Item>
         <HeartOutlined style={{ fontSize: "16px", color: "#08c" }} />
-        <Link to="/">Home</Link>
+        <Link to="/">Cinerama</Link>
       </Menu.Item>
       <Menu.Item>
         <Link to="popular">Popular</Link>
