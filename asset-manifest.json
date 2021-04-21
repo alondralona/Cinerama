@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cinerama/static/css/main.3b9a9af1.chunk.css",
+    "main.js": "/cinerama/static/js/main.1de0c602.chunk.js",
+    "main.js.map": "/cinerama/static/js/main.1de0c602.chunk.js.map",
+    "runtime-main.js": "/cinerama/static/js/runtime-main.fb98bb6c.js",
+    "runtime-main.js.map": "/cinerama/static/js/runtime-main.fb98bb6c.js.map",
+    "static/css/2.ee27ba25.chunk.css": "/cinerama/static/css/2.ee27ba25.chunk.css",
+    "static/js/2.9a2465e1.chunk.js": "/cinerama/static/js/2.9a2465e1.chunk.js",
+    "static/js/2.9a2465e1.chunk.js.map": "/cinerama/static/js/2.9a2465e1.chunk.js.map",
+    "static/js/3.d6a82159.chunk.js": "/cinerama/static/js/3.d6a82159.chunk.js",
+    "static/js/3.d6a82159.chunk.js.map": "/cinerama/static/js/3.d6a82159.chunk.js.map",
+    "index.html": "/cinerama/index.html",
+    "static/css/2.ee27ba25.chunk.css.map": "/cinerama/static/css/2.ee27ba25.chunk.css.map",
+    "static/css/main.3b9a9af1.chunk.css.map": "/cinerama/static/css/main.3b9a9af1.chunk.css.map",
+    "static/js/2.9a2465e1.chunk.js.LICENSE.txt": "/cinerama/static/js/2.9a2465e1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb98bb6c.js",
+    "static/css/2.ee27ba25.chunk.css",
+    "static/js/2.9a2465e1.chunk.js",
+    "static/css/main.3b9a9af1.chunk.css",
+    "static/js/main.1de0c602.chunk.js"
+  ]
+}
