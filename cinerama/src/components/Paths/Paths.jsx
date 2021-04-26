@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Movie from "../Movie/Movie";
 import Displaymovie from "../Displaymovies/Displaymovie";
-import MovieMap from "../MovieMap";
+import MovieMap from "../ForeignFilms/MovieMap";
 
 const Paths = () => (
   <Switch>

@@ -16,11 +16,15 @@ export default {
     return axios.get(url).then((result) => result.data);
   },
   getMostVoted: () => {
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKEY}&language=en-US&sort_by=vote_average.asc&include_adult=true&include_video=false&page=1`;
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKEY}&language=en-US&sort_by=vote_average.desc&include_adult=true&include_video=false&page=1`;
     return axios.get(url).then((result) => result.data);
   },
   getForiegnMovies: (category: string) => {
-    const url = `https://api.themoviedb.org/3/movie/${category}?api_key=${APIKEY}&language=en-US&page=1`;
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKEY}&language=en-US&region=${category}&sort_by=popularity.asc&include_adult=false&include_video=false&page=1`;
+    return axios.get(url).then((result) => result.data);
+  },
+  getMoviesRec: (movieID: number) => {
+    const url = `https://api.themoviedb.org/3/movie/${movieID}/recommendations?api_key=${APIKEY}&language=en-US&page=1`;
     return axios.get(url).then((result) => result.data);
   },
 };

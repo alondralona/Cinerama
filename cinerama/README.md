@@ -4,6 +4,44 @@ Alondra Lona, Austin Escalante, Johnathan Gil, Timothy Wu
 
 ## Available Scripts
 
+## Dependencies:
+
+### `Node_Modules:`
+
+npm install
+
+### `Antd Design:`
+
+npm i antd
+
+### `Axios:`
+
+npm i axios
+
+### `Leaflet:`
+
+npm i leaflet
+
+### `Bootstrap:`
+
+npm i bootstrap
+
+### `React Prop Types:`
+
+npm i prop-types
+
+### `React-Dom:`
+
+npm i react-dom
+
+### `React Leaflet:`
+
+npm i react-leaflet
+
+### `React-Router-Dom:`
+
+npm i react-router-dom
+
 In the project directory, you can run:
 
 ### `npm start`
