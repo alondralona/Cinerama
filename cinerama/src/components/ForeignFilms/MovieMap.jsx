@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Loading from "./Loading";
 import WorldMap from "./WorldMap";
-import LoadCountries from "/Users/austinescalante/Desktop/Cinerama/cinerama/src/Tasks/LoadCountries";
+import LoadCountries from "../Tasks/LoadCountries";
 
 const MovieMap = () => {
   const [countries, setCountries] = useState([]);

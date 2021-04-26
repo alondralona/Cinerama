@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import "./WorldMap.css";
 import Api from "../API/APIData.js";
 import Displaymovie from "../Displaymovies/Displaymovie";
-import countries from "/Users/austinescalante/Desktop/Cinerama/cinerama/src/data/countries.json";
+import countries from "../data/countries.json";
 import MovieTemplate from "../MovieTemplate/MovieTemplate";
 import { Row, Col } from "antd";
 
