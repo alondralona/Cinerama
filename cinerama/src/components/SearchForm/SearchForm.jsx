@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Input, Col, Row, Button } from "antd";
+import { Redirect } from "react-router-dom";
+import "./SearchForm.css";
 
 export default class SearchForm extends Component {
   constructor(props) {
@@ -23,16 +25,21 @@ export default class SearchForm extends Component {
   render() {
     const { redirect, value: query } = this.state;
     return (
-      <form onSubmit={this.handleInput}>
-        <Input
-          className="input"
-          placeholder="Search for a movie..."
-          onChange={this.handleChange}
-        />
-        <Button type="primary" icon="search" onClick={this.handleInput}>
-          Search
-        </Button>
-      </form>
+      <Row>
+        <Col span={14} offset={5}>
+          <form onSubmit={this.handleInput}>
+            <Input
+              className="input"
+              placeholder="Search for movies..."
+              onChange={this.handleChange}
+            />
+            <Button type="primary" onClick={this.handleInput}>
+              Search
+            </Button>
+          </form>
+        </Col>
+        {redirect && query && <Redirect to={`/search/${query}`} push />}
+      </Row>
     );
   }
 }

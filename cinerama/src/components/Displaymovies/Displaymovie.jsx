@@ -3,6 +3,8 @@ import MovieTemplate from "../MovieTemplate/MovieTemplate";
 import Api from "../API/APIData.js";
 import { Row, Col } from "antd";
 
+import "./Displaymovie.css";
+
 export default class Displaymovie extends Component {
   constructor(props) {
     super(props);
