@@ -17,7 +17,7 @@ export default function NavBar() {
     <Menu mode="horizontal">
       <Menu.Item>
         <HomeOutlined style={{ fontSize: "18px", color: "#08c" }} />
-        <Link to="/">Cinerama</Link>
+        <Link to="/home">Cinerama</Link>
       </Menu.Item>
       <Menu.Item>
         <HeartOutlined style={{ fontSize: "18px", color: "#08c" }} />
