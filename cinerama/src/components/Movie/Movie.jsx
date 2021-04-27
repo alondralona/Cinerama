@@ -44,16 +44,16 @@ export default class Movie extends Component {
     return (
       <div>
         <Row>
-          <Col span={8} offset={1}>
-            <img
-              alt={this.state.name}
-              width="85%"
-              src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`}
-            />
-          </Col>
-          <Col span={12} offset={1}>
+          <Col span={12} offset={6}>
             <h1>{this.state.name}</h1>
             <hr />
+            <Col span={8} offset={6}>
+              <img
+                alt={this.state.name}
+                width="150%"
+                src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`}
+              />
+            </Col>
             <strong> Description: </strong>
             <p>{this.state.description}</p>
             <hr />
