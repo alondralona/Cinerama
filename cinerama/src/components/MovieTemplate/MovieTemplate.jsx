@@ -14,6 +14,7 @@ type Props = {
 const MovieTemplate = ({ name, date, vote, image, id }: Props) => (
   <Link to={`/movie/${id}`}>
     <Card
+      className="h-100"
       style={{
         border: 2,
         width: 240,

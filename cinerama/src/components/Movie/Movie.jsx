@@ -48,11 +48,19 @@ export default class Movie extends Component {
             <h1>{this.state.name}</h1>
             <hr />
             <Col span={8} offset={6}>
-              <img
-                alt={this.state.name}
-                width="150%"
-                src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`}
-              />
+              {this.state.urlImage !== null ? (
+                <img
+                  alt={this.state.name}
+                  width="150%"
+                  src={`https://image.tmdb.org/t/p/w500${this.state.urlImage}`}
+                />
+              ) : (
+                <img
+                  alt={this.state.name}
+                  width="150%"
+                  src={`https://critics.io/img/movies/poster-placeholder.png`}
+                />
+              )}
             </Col>
             <strong> Description: </strong>
             <p>{this.state.description}</p>
