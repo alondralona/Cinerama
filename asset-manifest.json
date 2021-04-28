@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Cinerama/static/css/main.58766458.chunk.css",
-    "main.js": "/Cinerama/static/js/main.abfae695.chunk.js",
-    "main.js.map": "/Cinerama/static/js/main.abfae695.chunk.js.map",
+    "main.js": "/Cinerama/static/js/main.eb4f568d.chunk.js",
+    "main.js.map": "/Cinerama/static/js/main.eb4f568d.chunk.js.map",
     "runtime-main.js": "/Cinerama/static/js/runtime-main.489214b0.js",
     "runtime-main.js.map": "/Cinerama/static/js/runtime-main.489214b0.js.map",
     "static/css/2.469793a1.chunk.css": "/Cinerama/static/css/2.469793a1.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.469793a1.chunk.css",
     "static/js/2.bc393f99.chunk.js",
     "static/css/main.58766458.chunk.css",
-    "static/js/main.abfae695.chunk.js"
+    "static/js/main.eb4f568d.chunk.js"
   ]
 }
